@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 // jest.config.mjs
 export default {
     transform: {
@@ -5,4 +9,3 @@ export default {
     },
     transformIgnorePatterns: ["<rootDir>/node_modules/"],
 };
-
